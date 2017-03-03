@@ -14,3 +14,4 @@ this will construct a basic arborescence in the "page" dir
 ## Conversion :
 
 use http://pandoc.org/ to convert the downloaded files from any markup format into another.
+sudo apt-get install pandoc
