@@ -14,4 +14,10 @@ this will construct a basic arborescence in the "page" dir
 ## Conversion :
 
 use http://pandoc.org/ to convert the downloaded files from any markup format into another.
-sudo apt-get install pandoc
+sudo apt-get install pandoc will get you a too old version
+
+http://pandoc.org/installing.html#linux
+
+pandoc -f textile --to dokuwiki -o output pages/project/page
+
+todo : keep links and files
