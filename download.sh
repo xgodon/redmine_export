@@ -4,6 +4,7 @@ if [ "$#" -ne 2 ]; then
     echo "Illegal number of parameters. Usage : download page output_file"
 fi
 
+echo "downloading  $1 to $2"
 
 source config.sh
 
@@ -49,4 +50,5 @@ curl "${gMonsite}" \
 # 3/ On va à la page correspondante, en faisant un grep
 curl "${gPaheAAtteindre}" \
  -s \
- -b "${gFichierCookie}" > $2
+ -b "${gFichierCookie}" \
+-o $2
